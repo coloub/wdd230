@@ -20,6 +20,7 @@ header {
     color: white;
     padding: 1rem;
     text-align: center;
+    position: relative; /* Para posicionar el botón de hamburguesa */
 }
 
 header .header-content {
@@ -37,36 +38,62 @@ header .profile-img {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-header h1 {
+header h2 {
     margin: 0;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
 }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+/* Botón de hamburguesa */
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: white;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "❌";
+}
+
+/* Menú de navegación */
+.navigation {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    list-style: none;
     background-color: #023e8a;
+    padding: 0;
+    margin: 0;
 }
 
-nav ul li {
-    margin: 0.5rem 0;
-}
-
-nav ul li a {
+.navigation a {
+    display: none;
+    padding: 1rem;
+    text-align: center;
     text-decoration: none;
     color: white;
-    padding: 0.5rem 1rem;
-    font-size: 1.1rem;
-    transition: background-color 0.3s ease;
 }
 
-nav ul li a:hover {
+.navigation a:hover {
     background-color: #03045e;
-    border-radius: 5px;
+}
+
+/* Wayfinding: Estilo para la página activa */
+.navigation a.active {
+    background-color: #0077b6;
+    font-weight: bold;
+}
+
+/* Menú abierto */
+.open a {
+    display: block;
 }
 
 main {
@@ -161,4 +188,21 @@ footer .flag {
     width: 20px;
     vertical-align: middle;
     margin-left: 0.5rem;
+}
+
+/* Estilos para pantallas grandes */
+@media (min-width: 768px) {
+    #menu {
+        display: none; /* Ocultar botón de hamburguesa */
+    }
+
+    .navigation {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .navigation a {
+        display: block;
+        flex: 1 1 100%;
+    }
 }
