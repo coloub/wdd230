@@ -11,6 +11,8 @@
     <meta property="og:image" content="https://magritouroperator.com/wp-content/uploads/2023/09/bolivia-magri-7.jpg">
     <meta property="og:url" content="https://coloub.github.io/wdd230">
     <title>José Manuel Mendoza Torrico - WDD 230 - Web Frontend Development</title>
+    <!-- Normalización CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
     <!-- Preconexión para Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,7 +22,7 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
     <!-- Icon -->
-    <link rel="icon" href="/wdd230/favicon.ico">
+    <link rel="icon" href="favicon.ico">
 </head>
 <body>
     <header>
@@ -30,10 +32,12 @@
         </div>
         <!-- Botón de hamburguesa -->
         <button type="button" id="menu"></button>
+        <!-- Botón de Dark Mode -->
+        <button id="darkModeToggle">🌙</button>
     </header>
     <nav>
         <ul class="navigation">
-            <li><a href="index.html" title="Home" class="active">Home</a></li> <!-- Página activa -->
+            <li><a href="index.html" title="Home" class="active">Home</a></li>
             <li><a href="#" title="Chamber">Chamber</a></li>
             <li><a href="week01/chamber-site-plan.html" title="Site Plan">Site Plan</a></li>
             <li><a href="#" title="Form">Form</a></li>
@@ -68,6 +72,7 @@
         <p id="lastModified"></p>
     </footer>
     <script src="scripts/getDates.js"></script>
-    <script src="scripts/hamburger.js"></script> <!-- Nuevo script para el menú -->
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/darkMode.js"></script>
 </body>
 </html>
