@@ -37,6 +37,24 @@ body.dark-mode {
     background-color: #555;
 }
 
+/* Ajustes específicos para la sección Information en modo oscuro */
+.dark-mode .information p {
+    color: #f4f4f4; /* Texto blanco para mejor contraste */
+}
+
+.dark-mode .information h3 {
+    color: #f4f4f4; /* Texto blanco para los títulos */
+}
+
+.dark-mode .learning-activities ul li a {
+    color: #0077b6; /* Mantener el color azul para los enlaces */
+}
+
+.dark-mode .learning-activities ul li a:hover {
+    color: #03045e; /* Color azul oscuro al hacer hover */
+}
+
+/*Resto del codigo*/
 h1, h2, h3 {
     font-family: 'Open Sans', sans-serif;
 }
