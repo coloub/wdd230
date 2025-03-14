@@ -1,4 +1,4 @@
-/* Normalización personalizada */
+/* Normalize */
 html {
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
@@ -8,4 +8,4 @@ body {
     margin: 0;
 }
 
-/* ... (añade más reglas según sea necesario) ... */
+/* ... Add new rules ... */
