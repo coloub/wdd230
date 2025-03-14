@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sucre Chamber of Commerce - Promoting economic growth and bicentennial tourism in Sucre, Bolivia">
+    
+    <!-- Social Media Meta Tags -->
+    <meta property="og:title" content="Sucre Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/sucre-chamber-logo.webp">
+    <meta property="og:url" content="https://coloub.github.io/wdd230">
+    
+    <title>Sucre Chamber of Commerce | Home</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo-container">
+                <img src="images/sucre-chamber-logo.webp" alt="Sucre Chamber of Commerce Logo" class="logo">
+                <h1>Sucre Chamber of Commerce</h1>
+            </div>
+            <nav>
+                <button id="menu-button" aria-label="Toggle Menu">
+                    <span>&#9776;</span>
+                </button>
+                <ul id="primary-nav">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="social-links">
+                <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                    <img src="images/facebook-icon.webp" alt="Facebook Icon">
+                </a>
+                <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                    <img src="images/instagram-icon.webp" alt="Instagram Icon">
+                </a>
+            </div>
+        </div>
+        <div class="date-banner">
+            <p id="current-date">Current Date Will Display Here</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <picture>
+                <source media="(min-width: 960px)" srcset="images/hero-large.jpg">
+                <source media="(min-width: 640px)" srcset="images/hero-medium.jpg">
+                <img src="images/hero-small.jpg" alt="Sucre City Landscape" class="hero-img">
+            </picture>
+            <div class="hero-overlay">
+                <h2>Welcome to Sucre</h2>
+                <p>UNESCO World Heritage Site & Constitutional Capital of Bolivia</p>
+                <a href="join.html" class="cta-button">Join the Chamber</a>
+            </div>
+        </section>
+
+        <div class="main-grid">
+            <section class="events card">
+                <h3>Upcoming Events</h3>
+                <div class="event-content">
+                    <h4>Bicentennial Celebration Planning</h4>
+                    <p class="event-date">March 20, 2025 • 7:00 PM</p>
+                    <p>Join local business owners to discuss preparations for the 2025 Bicentennial celebrations. Networking opportunity with city officials and cultural organizations.</p>
+                    <a href="https://www.la-razon.com/nacional/2025/01/02/bicentenario-bolivia-sucre-acto-reivindicacion/" class="more-info">Learn More</a>
+                </div>
+            </section>
+
+            <section class="weather card">
+                <h3>Current Weather</h3>
+                <div class="weather-content">
+                    <img src="images/weather-icon.webp" alt="Weather Icon" class="weather-icon">
+                    <p class="temperature">22°C</p>
+                    <p class="condition">Partly Cloudy</p>
+                    <hr>
+                    <p class="wind">Wind Speed: 5 mph</p>
+                    <p class="humidity">Humidity: 45%</p>
+                </div>
+            </section>
+
+            <section class="spotlights">
+                <div class="spotlight card">
+                    <h3>Tourism Guide</h3>
+                    <img src="images/tourism-icon.webp" alt="Tourism Icon">
+                    <p>"Expert guides for Sucre's historical sites"</p>
+                    <hr>
+                    <p>contact@sucretours.com</p>
+                    <p>+591-4-6461234</p>
+                </div>
+
+                <div class="spotlight card">
+                    <h3>Traditional Textiles</h3>
+                    <img src="images/textile-icon.webp" alt="Textile Icon">
+                    <p>"Authentic Bolivian textiles handcrafted by local artisans"</p>
+                    <hr>
+                    <p>info@sucretextiles.com</p>
+                    <p>+591-4-6467890</p>
+                </div>
+
+                <div class="spotlight card">
+                    <h3>Colonial Museum</h3>
+                    <img src="images/museum-icon.webp" alt="Museum Icon">
+                    <p>"Explore Sucre's rich colonial history"</p>
+                    <hr>
+                    <p>museum@casalibertad.com</p>
+                    <p>+591-4-6465678</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-top">
+            <div class="footer-logo">
+                <img src="images/sucre-chamber-logo.webp" alt="Sucre Chamber of Commerce Logo" class="logo">
+                <div class="footer-name">
+                    <h3>Sucre Chamber of Commerce</h3>
+                    <p>Calle Nicolás Ortiz #12, Sucre, Bolivia</p>
+                </div>
+            </div>
+            <div class="footer-contact">
+                <p>info@sucrechamber.org</p>
+                <p>+591-4-6460000</p>
+                <p><a href="https://maps.app.goo.gl/x8r2izdDhREQis7J7" target="_blank">📍 Location Map</a></p>
+            </div>
+        </div>
+        <hr>
+        <div class="footer-bottom">
+            <p>&copy; <span id="current-year"></span> Sucre Chamber of Commerce | <span class="dev-name">Jose Manuel Mendoza Torrico</span> | WDD 230 Project</p>
+            <p>Last Modified: <span id="last-modified"></span></p>
+        </div>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>
