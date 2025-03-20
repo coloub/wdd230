@@ -18,6 +18,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- Fuentes de Google -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lavishly+Yours&display=swap" rel="stylesheet">
     <!-- Hojas de estilo -->
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
@@ -44,6 +45,29 @@
         </ul>
     </nav>
     <main>
+        <div class="hero">
+            <picture>
+                <source 
+                    srcset="images/hero-small.webp" 
+                    media="(max-width: 500px)"
+                >
+                <source 
+                    srcset="images/hero-medium.webp" 
+                    media="(max-width: 1000px)"
+                >
+                <img 
+                    src="images/hero-large.webp" 
+                    alt="San Diego California Temple" 
+                    width="1500" 
+                    height="750"
+                    loading="lazy"
+                >
+            </picture>
+            <div class="hero-overlay">
+                <h2>San Diego California Temple</h2>
+            </div>
+        </div>
+
         <h1 class="course-title">WDD 230: Web Frontend Development</h1>
         <section class="card learning-activities">
             <div class="card-header">
@@ -67,6 +91,20 @@
             <p><strong>Page Visits:</strong> 23</p>
         </section>
     </main>
+
+    <!-- Mapa de Google -->
+<section class="map-container">
+    <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3798.95421570923!2d-63.25535528469382!3d-17.783653488016822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93f1e7dbfd79aed1%3A0x3a4f6e7d6d6c6f6e!2sSucre%2C%20Bolivia!5e0!3m2!1sen!2sus!4v1630000000000!5m2!1sen!2sus" 
+        width="600" 
+        height="450" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy"
+        title="Mapa de Sucre, Bolivia"
+    ></iframe>
+</section>
+
     <footer>
         <p>&copy; <span id="currentYear"></span> José Manuel Mendoza Torrico - Bolivia <img src="images/bolivia-flag.png" alt="Bolivia Flag" class="flag"></p>
         <p id="lastModified"></p>
@@ -74,5 +112,6 @@
     <script src="scripts/getDates.js"></script>
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/darkMode.js"></script>
+    <script src="scripts/visitCounter.js"></script>
 </body>
 </html>

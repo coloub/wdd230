@@ -234,6 +234,59 @@ footer .flag {
     margin-left: 0.5rem;
 }
 
+/* Hero Image */
+.hero {
+    position: relative;
+    margin: 1rem 0;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(109, 122, 241, 0.6);
+    color: white;
+    padding: 0.8rem;
+    text-align: center;
+    border-radius: 6px;
+    width: 90%;
+    max-width: 400px;
+}
+
+.hero-overlay h2 {
+    font-family: "Lavishly Yours", cursive;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    font-size: 2rem;
+    line-height: 1.2;
+}
+
+/* Mapa de Google */
+.map-container {
+    margin: 2rem auto;
+    max-width: 960px;
+    padding: 0 1rem;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 450px;
+    border: none;
+    border-radius: 8px;
+}
+
+
 /* Estilos para pantallas grandes */
 @media (min-width: 768px) {
     #menu {
@@ -249,4 +302,5 @@ footer .flag {
         display: block;
         flex: 1 1 100%;
     }
+    
 }
