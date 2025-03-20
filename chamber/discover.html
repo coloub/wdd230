@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover Sucre - Learn about the beautiful constitutional capital of Bolivia, its rich history, culture, and attractions">
+    
+    <!-- Social Media Meta Tags -->
+    <meta property="og:title" content="Discover Sucre - Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://magritouroperator.com/wp-content/uploads/2023/09/bolivia-magri-7.jpg">
+    <meta property="og:url" content="https://coloub.github.io/wdd230">
+    
+    <title>Discover Sucre | Chamber of Commerce</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo-container">
+                <img src="images/sucre-chamber-logo.webp" alt="Sucre Chamber of Commerce Logo" class="logo">
+                <h1>Sucre Chamber of Commerce</h1>
+            </div>
+            <nav>
+                <button id="menu-button" aria-label="Toggle Menu">
+                    <span>&#9776;</span>
+                </button>
+                <ul id="primary-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="discover.html" class="active">Discover</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="social-links">
+                <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                    <img src="images/facebook-icon.webp" alt="Facebook Icon">
+                </a>
+                <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                    <img src="images/instagram-icon.webp" alt="Instagram Icon">
+                </a>
+            </div>
+        </div>
+        <div class="date-banner">
+            <p id="current-date">Current Date Will Display Here</p>
+        </div>
+    </header>
+
+    <main class="discover-main">
+        <div class="discover-content">
+            <h2 class="discover-title">Discover Sucre: The White City of Bolivia</h2>
+            
+            <div class="discover-grid">
+                <!-- Sidebar with statistical data -->
+                <aside class="discover-sidebar">
+                    <div class="visit-message card">
+                        <h3>Your Visits</h3>
+                        <p id="visit-message">Welcome! Let us know if you have any questions.</p>
+                    </div>
+                    
+                    <div class="demographics card">
+                        <h3>City Demographics</h3>
+                        <div class="stat-item">
+                            <p class="stat-title">Population</p>
+                            <p class="stat-value">300,000+</p>
+                        </div>
+                        <div class="stat-item">
+                            <p class="stat-title">Elevation</p>
+                            <p class="stat-value">2,810 meters</p>
+                        </div>
+                        <div class="stat-item">
+                            <p class="stat-title">Founded</p>
+                            <p class="stat-value">1538</p>
+                        </div>
+                        <div class="stat-item">
+                            <p class="stat-title">Languages</p>
+                            <p class="stat-value">Spanish, Quechua</p>
+                        </div>
+                    </div>
+                    
+                    <div class="economy card">
+                        <h3>Economic Data</h3>
+                        <div class="stat-item">
+                            <p class="stat-title">GDP Growth Rate</p>
+                            <p class="stat-value">3.2% (2023)</p>
+                        </div>
+                        <div class="stat-item">
+                            <p class="stat-title">Unemployment</p>
+                            <p class="stat-value">4.1%</p>
+                        </div>
+                        <div class="stat-item">
+                            <p class="stat-title">Main Industries</p>
+                            <p class="stat-value">Tourism, Textiles, Agriculture</p>
+                        </div>
+                    </div>
+                    
+                    <div class="upcoming-events card">
+                        <h3>Upcoming in 2025</h3>
+                        <div class="event-item">
+                            <p class="event-name">Bicentennial Parade</p>
+                            <p class="event-date">May 25, 2025</p>
+                        </div>
+                        <div class="event-item">
+                            <p class="event-name">Artisan Fair</p>
+                            <p class="event-date">June 15-30, 2025</p>
+                        </div>
+                        <div class="event-item">
+                            <p class="event-name">Pujllay Festival</p>
+                            <p class="event-date">March 15, 2025</p>
+                        </div>
+                        <div class="event-item">
+                            <p class="event-name">Colonial Music Festival</p>
+                            <p class="event-date">August 10-15, 2025</p>
+                        </div>
+                    </div>
+                </aside>
+                
+                <!-- Main content - gallery of images -->
+                <section class="discover-gallery">
+                    <div class="gallery-item">
+                        <img src="images/01-plaza-25-de-mayo-sucre-bolivie.webp" data-src="images/01-plaza-25-de-mayo-sucre-bolivie.webp" alt="Plaza 25 de Mayo" class="gallery-img" loading="lazy">
+                        <div class="gallery-caption">
+                            <h3>Plaza 25 de Mayo</h3>
+                            <p>The heart of Sucre featuring the Metropolitan Cathedral and historic buildings.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <img src="images/casa-de-la-libertad-chuquisaca.webp" data-src="images/casa-de-la-libertad-chuquisaca.webp" alt="Casa de la Libertad" class="gallery-img" loading="lazy">
+                        <div class="gallery-caption">
+                            <h3>Casa de la Libertad</h3>
+                            <p>Where Bolivia's declaration of independence was signed in 1825.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <img src="images/347-La-Recoleta-Sucre-Bolivia.webp" data-src="images/347-La-Recoleta-Sucre-Bolivia.webp" alt="La Recoleta Monastery" class="gallery-img" loading="lazy">
+                        <div class="gallery-caption">
+                            <h3>La Recoleta Monastery</h3>
+                            <p>A 16th-century monastery with stunning views of the city.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <img src="images/istockphoto-1219090316-612x612.webp" data-src="images/istockphoto-1219090316-612x612.webp" alt="Traditional Textiles" class="gallery-img" loading="lazy">
+                        <div class="gallery-caption">
+                            <h3>Traditional Textiles</h3>
+                            <p>Colorful handwoven textiles from local artisans.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <img src="images/Church_in_Historic_Center_-_Sucre_-_Bolivia.webp" data-src="images/Church_in_Historic_Center_-_Sucre_-_Bolivia.webp" alt="Metropolitan Cathedral" class="gallery-img" loading="lazy">
+                        <div class="gallery-caption">
+                            <h3>Metropolitan Cathedral</h3>
+                            <p>The stunning white cathedral dates back to the 16th century.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <img src="images/cal.webp" data-src="images/cal.webp" alt="Cal Orck'o Dinosaur Tracks" class="gallery-img" loading="lazy">
+                        <div class="gallery-caption">
+                            <h3>Cal Orck'o Dinosaur Tracks</h3>
+                            <p>One of the largest dinosaur track sites in the world.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <img src="images/San-Felipe-de-Neri-03.webp" data-src="images/San-Felipe-de-Neri-03.webp" alt="Colonial Architecture" class="gallery-img" loading="lazy">
+                        <div class="gallery-caption">
+                            <h3>Colonial Architecture</h3>
+                            <p>The well-preserved white colonial buildings that give Sucre its nickname.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <img src="images/mercado.webp" data-src="images/mercado.webp" alt="Traditional Market" class="gallery-img" loading="lazy">
+                        <div class="gallery-caption">
+                            <h3>Traditional Market</h3>
+                            <p>The colorful Mercado Central where locals buy fresh produce and crafts.</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-top">
+            <div class="footer-logo">
+                <img src="images/sucre-chamber-logo.webp" alt="Sucre Chamber of Commerce Logo" class="logo">
+                <div class="footer-name">
+                    <h3>Sucre Chamber of Commerce</h3>
+                    <p>Calle Nicolás Ortiz #12, Sucre, Bolivia</p>
+                </div>
+            </div>
+            <div class="footer-contact">
+                <p>info@sucrechamber.org</p>
+                <p>+591-4-6460000</p>
+                <p><a href="https://maps.app.goo.gl/x8r2izdDhREQis7J7" target="_blank">📍 Location Map</a></p>
+            </div>
+        </div>
+        <hr>
+        <div class="footer-bottom">
+            <p>&copy; <span id="current-year"></span> Sucre Chamber of Commerce | <span class="dev-name">Jose Manuel Mendoza Torrico</span> | WDD 230 Project</p>
+            <p>Last Modified: <span id="last-modified"></span></p>
+        </div>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+    <script src="scripts/discover.js"></script>
+</body>
+</html>

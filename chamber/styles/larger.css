@@ -146,3 +146,41 @@
         padding: 3rem 2rem;
     }
 }
+
+/* Add these styles to your larger.css file */
+@media screen and (min-width: 640px) {
+    /* Discover Page Tablet Adjustments */
+    .discover-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Gallery hover effect for non-mobile */
+    .gallery-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+    
+    .gallery-item:hover .gallery-img {
+        filter: brightness(1.1);
+    }
+}
+
+@media screen and (min-width: 960px) {
+    /* Discover Page Desktop Layout */
+    .discover-grid {
+        grid-template-columns: 300px 1fr;
+    }
+    
+    .discover-gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    /* Sticky sidebar */
+    .discover-sidebar {
+        position: sticky;
+        top: 2rem;
+        align-self: start;
+        max-height: calc(100vh - 4rem);
+        overflow-y: auto;
+    }
+}
