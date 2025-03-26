@@ -1,0 +1,187 @@
+:root {
+    --form-primary-color: #0077b6;
+    --form-secondary-color: #023e8a;
+    --form-text-color: #333;
+    --form-bg-color: #f8f9fa;
+    --form-card-bg: #ffffff;
+    --form-border-color: #dee2e6;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem;
+}
+
+.form-container {
+    width: 100%;
+    max-width: 500px;
+    margin: 0;
+    padding: 2rem;
+    background-color: var(--form-card-bg);
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h1 {
+    text-align: center;
+    color: var(--form-primary-color);
+    margin-bottom: 1.5rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--form-text-color);
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--form-border-color);
+    border-radius: 4px;
+    font-family: 'Roboto', sans-serif;
+    transition: border-color 0.3s ease;
+    appearance: none;
+    -moz-appearance: none;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: var(--form-primary-color);
+}
+
+.form-group input:invalid {
+    border-color: #dc3545;
+}
+
+.form-group button {
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--form-primary-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.form-group button:hover {
+    background-color: var(--form-secondary-color);
+}
+
+.error {
+    color: #dc3545;
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+    display: block;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Range Input Styling */
+.form-group input[type="range"] {
+    width: 100%;
+    height: 10px;
+    background: var(--form-border-color);
+    outline: none;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+    border-radius: 5px;
+    appearance: none;
+    -moz-appearance: none;
+}
+
+.form-group input[type="range"]:hover {
+    opacity: 1;
+}
+
+.form-group input[type="range"]::-webkit-slider-thumb {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: var(--form-primary-color);
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.form-group input[type="range"]::-moz-range-thumb {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: var(--form-primary-color);
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+/* Styles for Record Confirmation Page */
+.confirmation {
+    text-align: center;
+    background-color: var(--form-card-bg);
+    padding: 2rem;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.confirmation-icon {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 1rem;
+    stroke: #28a745; 
+}
+
+.confirmation h1 {
+    color: var(--form-primary-color);
+    margin-bottom: 1.5rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.confirmation p {
+    color: var(--form-text-color);
+    margin-bottom: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.confirmation a {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--form-primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+.confirmation a:hover {
+    background-color: var(--form-secondary-color);
+}
+
+
+/* Responsive adjustments */
+@media screen and (max-width: 600px) {
+    .form-container {
+        padding: 1rem;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    main {
+        padding: 4rem 1rem;
+    }
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 230 - Web Frontend Development - Form Page for José Manuel Mendoza Torrico">
+    <meta name="author" content="José Manuel Mendoza Torrico">
+    <title>José Manuel Mendoza Torrico - Form Submission</title>
+    <!-- Normalización CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <!-- Preconexión para Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Fuentes de Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lavishly+Yours&display=swap" rel="stylesheet">
+    <!-- Hojas de estilo -->
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <!-- Icon -->
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="images/profile.jpg" alt="José Manuel Mendoza Torrico's Profile Picture" class="profile-img">
+            <h2>José Manuel Mendoza Torrico</h2>
+        </div>
+        <!-- Botón de hamburguesa -->
+        <button type="button" id="menu"></button>
+        <!-- Botón de Dark Mode -->
+        <button id="darkModeToggle">🌙</button>
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a href="index.html" title="Home">Home</a></li>
+            <li><a href="chamber/index.html" title="Chamber">Chamber</a></li>
+            <li><a href="week01/chamber-site-plan.html" title="Site Plan">Site Plan</a></li>
+            <li><a href="form.html" title="Form" class="active">Form</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="form-container">
+            <h1>Registration Form</h1>
+            <form method="get" action="record.html">
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input 
+                        type="text" 
+                        id="username" 
+                        name="username" 
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input 
+                        type="password" 
+                        id="password" 
+                        name="password" 
+                        required
+                        pattern="[a-zA-Z0-9]{8,}"
+                        title="Password must be at least 8 characters long and contain only alphanumeric characters"
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="confirm-password">Confirm Password:</label>
+                    <input 
+                        type="password" 
+                        id="confirm-password" 
+                        name="confirm-password" 
+                        required
+                    >
+                    <span id="password-error" class="error"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        required
+                        pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
+                        title="Please enter a valid BYU-Idaho email address"
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="page-rating">Page Rating: <span id="rating-value">5</span></label>
+                    <input 
+                        type="range" 
+                        id="page-rating" 
+                        name="page-rating" 
+                        min="1" 
+                        max="10" 
+                        step="1" 
+                        value="5"
+                    >
+                </div>
+
+                <div class="form-group">
+                    <button type="submit">Submit Form</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> José Manuel Mendoza Torrico - Bolivia <img src="images/bolivia-flag.png" alt="Bolivia Flag" class="flag"></p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/darkMode.js"></script>
+    <script src="scripts/form.js"></script>
+</body>
+</html>
