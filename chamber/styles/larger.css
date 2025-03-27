@@ -184,3 +184,32 @@
         overflow-y: auto;
     }
 }
+
+@media screen and (min-width: 640px) {
+    .form-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .benefits-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .join-container {
+        flex-direction: row;
+        gap: 3rem;
+    }
+    
+    .join-form-section {
+        flex: 2;
+    }
+    
+    .membership-benefits {
+        flex: 1;
+    }
+    
+    .benefits-grid {
+        grid-template-columns: 1fr;
+    }
+}

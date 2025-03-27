@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Thank You for Joining the Sucre Chamber of Commerce">
+    <meta name="author" content="José Manuel Mendoza Torrico">
+    
+    <title>Thank You | Sucre Chamber of Commerce</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo-container">
+                <img src="images/sucre-chamber-logo.webp" alt="Sucre Chamber of Commerce Logo" class="logo">
+                <h1>Sucre Chamber of Commerce</h1>
+            </div>
+            <nav>
+                <button id="menu-button" aria-label="Toggle Menu">
+                    <span>&#9776;</span>
+                </button>
+                <ul id="primary-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="social-links">
+                <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                    <img src="images/facebook-icon.webp" alt="Facebook Icon">
+                </a>
+                <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                    <img src="images/instagram-icon.webp" alt="Instagram Icon">
+                </a>
+            </div>
+        </div>
+        <div class="date-banner">
+            <p id="current-date">Current Date Will Display Here</p>
+        </div>
+    </header>
+
+    <main class="thankyou-main">
+        <div class="thankyou-content">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="green" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="confirmation-icon">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+            </svg>
+            <h2>Thank You for Your Application!</h2>
+            <p>Your membership application for the Sucre Chamber of Commerce has been successfully submitted. We will review your application and contact you shortly with further details.</p>
+            <div class="thankyou-actions">
+                <a href="index.html" class="cta-button">Return to Home</a>
+                <a href="directory.html" class="cta-button">Explore Our Directory</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-top">
+            <div class="footer-logo">
+                <img src="images/sucre-chamber-logo.webp" alt="Sucre Chamber of Commerce Logo" class="logo">
+                <div class="footer-name">
+                    <h3>Sucre Chamber of Commerce</h3>
+                    <p>Calle Nicolás Ortiz #12, Sucre, Bolivia</p>
+                </div>
+            </div>
+            <div class="footer-contact">
+                <p>info@sucrechamber.org</p>
+                <p>+591-4-6460000</p>
+                <p><a href="https://maps.app.goo.gl/x8r2izdDhREQis7J7" target="_blank">📍 Location Map</a></p>
+            </div>
+        </div>
+        <hr>
+        <div class="footer-bottom">
+            <p>&copy; <span id="current-year"></span> Sucre Chamber of Commerce | <span class="dev-name">Jose Manuel Mendoza Torrico</span> | WDD 230 Project</p>
+            <p>Last Modified: <span id="last-modified"></span></p>
+        </div>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>
