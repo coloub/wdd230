@@ -1,0 +1,88 @@
+{
+    "families": [
+      {
+        "familyName": "Johnson",
+        "moveInDate": "2024-01-15",
+        "familySize": 4,
+        "visitedByBishopric": true,
+        "members": [
+          {
+            "name": "Michael Johnson",
+            "gender": "Male",
+            "birthdate": "1982-06-22"
+          },
+          {
+            "name": "Sarah Johnson",
+            "gender": "Female",
+            "birthdate": "1984-09-12"
+          },
+          {
+            "name": "Emma Johnson",
+            "gender": "Female",
+            "birthdate": "2012-03-30"
+          },
+          {
+            "name": "James Johnson",
+            "gender": "Male",
+            "birthdate": "2015-11-05"
+          }
+        ]
+      },
+      {
+        "familyName": "Smith",
+        "moveInDate": "2024-02-28",
+        "familySize": 3,
+        "visitedByBishopric": false,
+        "members": [
+          {
+            "name": "David Smith",
+            "gender": "Male",
+            "birthdate": "1975-12-10"
+          },
+          {
+            "name": "Lisa Smith",
+            "gender": "Female",
+            "birthdate": "1978-04-18"
+          },
+          {
+            "name": "Ryan Smith",
+            "gender": "Male",
+            "birthdate": "2010-08-25"
+          }
+        ]
+      },
+      {
+        "familyName": "Garcia",
+        "moveInDate": "2024-03-10",
+        "familySize": 5,
+        "visitedByBishopric": true,
+        "members": [
+          {
+            "name": "Carlos Garcia",
+            "gender": "Male",
+            "birthdate": "1980-11-03"
+          },
+          {
+            "name": "Maria Garcia",
+            "gender": "Female",
+            "birthdate": "1982-07-14"
+          },
+          {
+            "name": "Sofia Garcia",
+            "gender": "Female",
+            "birthdate": "2011-05-17"
+          },
+          {
+            "name": "Lucas Garcia",
+            "gender": "Male",
+            "birthdate": "2013-09-22"
+          },
+          {
+            "name": "Isabella Garcia",
+            "gender": "Female",
+            "birthdate": "2016-12-05"
+          }
+        ]
+      }
+    ]
+  }
