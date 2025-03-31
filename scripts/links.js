@@ -1,69 +1,66 @@
-// URL base para tu repositorio (ajustar según tu nombre de usuario)
 const baseURL = "https://coloub.github.io/wdd230/";
+const linksURL = "data/links.json";
 
-// URL del archivo JSON de enlaces
-const linksURL = "https://coloub.github.io/wdd230/data/links.json";
-
-// Seleccionar el contenedor de la lista de actividades
+// Select the learning activities list container
 const learningActivitiesList = document.querySelector('.learning-activities ul');
 
-// Función asíncrona para obtener los datos de enlaces
+// Asynchronous function to fetch links data
 async function getLinks() {
   try {
     const response = await fetch(linksURL);
     
-    // Verificar si la respuesta es correcta
+    // Check if response is ok
     if (response.ok) {
       const data = await response.json();
-      // Mostrar los enlaces en la página
+      // Display links on the page
       displayLinks(data);
     } else {
       throw Error(await response.text());
     }
   } catch (error) {
     console.log("Error fetching links data:", error);
-    // Mostrar un mensaje de error en la lista
+    // Show error message in the list
     learningActivitiesList.innerHTML = '<li>Error loading learning activities. Please try again later.</li>';
   }
 }
 
-// Función para mostrar los enlaces en la página
+// Function to display links on the page
 function displayLinks(data) {
-  // Limpiar el contenido actual
+  // Clear current content
   learningActivitiesList.innerHTML = '';
   
-  // Iterar por cada semana
+  // Iterate through each week
   data.weeks.forEach(weekData => {
-    // Crear un elemento de lista para cada semana
+    // Create a list item for each week
     const li = document.createElement('li');
     
-    // Verificar si hay enlaces
+    // Check if there are links
     if (weekData.links.length > 0) {
-      // Agregar el número de semana
+      // Add week number
       li.textContent = `${weekData.week}: `;
       
-      // Iterar por cada enlace de la semana
+      // Iterate through each link of the week
       weekData.links.forEach((link, index) => {
-        // Crear un elemento de enlace
+        // Create link element
         const a = document.createElement('a');
         a.href = link.url;
         a.textContent = link.title;
         
-        // Agregar el enlace al elemento de lista
+        // Add link to list item
         li.appendChild(a);
         
-        // Agregar separador si no es el último enlace
+        // Add separator if not the last link
         if (index < weekData.links.length - 1) {
           const separator = document.createTextNode(' | ');
           li.appendChild(separator);
         }
       });
       
-      // Agregar el elemento de lista a la lista principal
+      // Add list item to main list
       learningActivitiesList.appendChild(li);
     }
   });
 }
 
-// Llamar a la función para cargar los enlaces
+// Call function to load links
 getLinks();
