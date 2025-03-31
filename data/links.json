@@ -1,0 +1,78 @@
+{
+    "weeks": [
+      {
+        "week": "Week 01",
+        "links": [
+          {
+            "url": "week01/holygrail.html",
+            "title": "Holy Grail Layout"
+          },
+          {
+            "url": "week01/media-query.html",
+            "title": "Media Query"
+          },
+          {
+            "url": "https://codepen.io/Jose-Manuel-Mendoza-Torrico/pen/xxQBOWX",
+            "title": "JS Pen"
+          }
+        ]
+      },
+      {
+        "week": "Week 2",
+        "links": [
+          {
+            "url": "week02/design.html",
+            "title": "Design Principles"
+          }
+        ]
+      },
+      {
+        "week": "Week 3",
+        "links": [
+          {
+            "url": "week03/images/landscape.webp",
+            "title": "WebP Format"
+          }
+        ]
+      },
+      {
+        "week": "Week 4",
+        "links": [
+          {
+            "url": "week04/codepen.html",
+            "title": "Code Pen"
+          }
+        ]
+      },
+      {
+        "week": "Week 5",
+        "links": [
+          {
+            "url": "https://codepen.io/Jose-Manuel-Mendoza-Torrico/pen/MYWzeEO",
+            "title": "Code Pen"
+          },
+          {
+            "url": "week05/new-ward-members.json",
+            "title": "JSON"
+          },
+          {
+            "url": "week05/prophets.html",
+            "title": "Prophets"
+          },
+          {
+            "url": "week05/weather.html",
+            "title": "Weather"
+          }
+        ]
+      },
+      {
+        "week": "Week 6",
+        "links": [
+          {
+            "url": "#",
+            "title": "Coming Soon"
+          }
+        ]
+      }
+    ]
+  }
