@@ -1,0 +1,120 @@
+/* Estilos específicos para la sección del clima */
+
+.weather {
+    background-color: var(--card-bg);
+    position: relative;
+    overflow: hidden;
+}
+
+.weather::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.weather h3 {
+    position: relative;
+    z-index: 1;
+}
+
+.information {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.weather-location {
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+    margin-bottom: 0.5rem;
+}
+
+.weather-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.5rem 0;
+}
+
+.weather-temp {
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 0;
+}
+
+.weather-temp img {
+    transition: transform 2s ease;
+}
+
+.weather-temp:hover img {
+    transform: scale(1.1) rotate(10deg);
+}
+
+.weather-details {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(0, 119, 182, 0.1);
+    border-radius: 8px;
+    padding: 1rem 0.5rem;
+    margin-top: 0.5rem;
+    gap: 1rem;
+}
+
+.weather-details p {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    font-size: 0.95rem;
+}
+
+.wind::before, .humidity::before {
+    font-family: sans-serif;
+    margin-right: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.wind::before {
+    content: '💨';
+}
+
+.humidity::before {
+    content: '💧';
+}
+
+/* Media queries para diseño responsive */
+@media screen and (min-width: 640px) {
+    .weather-temp {
+        font-size: 1.8rem;
+    }
+    
+    .weather-details {
+        padding: 1.2rem 1rem;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .information {
+        padding: 0.5rem 0;
+    }
+    
+    .weather-location {
+        font-size: 1.3rem;
+    }
+    
+    .weather-temp {
+        font-size: 1.2rem;
+    }
+}

@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/wheather.css">
     
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -87,13 +88,15 @@
 
             <section class="weather card">
                 <h3>Current Weather</h3>
-                <div class="weather-content">
-                    <img src="images/weather-icon.webp" alt="Weather Icon" class="weather-icon">
-                    <p class="temperature">22°C</p>
-                    <p class="condition">Partly Cloudy</p>
-                    <hr>
-                    <p class="wind">Wind Speed: 5 mph</p>
-                    <p class="humidity">Humidity: 45%</p>
+                <div class="information">
+                    <p class="weather-location"><strong>Sucre, Bolivia</strong></p>
+                    <div class="weather-main">
+                        <p class="weather-temp">22°C - Partly Cloudy</p>
+                    </div>
+                    <div class="weather-details">
+                        <p class="wind">Wind Speed: 5 mph</p>
+                        <p class="humidity">Humidity: 45%</p>
+                    </div>
                 </div>
             </section>
 
@@ -151,5 +154,6 @@
     </footer>
 
     <script src="scripts/script.js"></script>
+    <script src="scripts/weather.js"></script>
 </body>
 </html>

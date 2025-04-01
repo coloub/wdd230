@@ -1,0 +1,74 @@
+{
+    "members": [
+      {
+        "name": "Sucre Tourism Agency",
+        "address": "Calle Aniceto Arce #28, Sucre, Bolivia",
+        "phone": "+591-4-6461234",
+        "website":"https://turismosucre.com.bo/",
+        "imageFile": "images/members/tourism-logo.webp",
+        "membershipLevel": "Gold",
+        "yearFounded": 2005,
+        "description": "Premier guided tours of Sucre's UNESCO World Heritage sites"
+      },
+      {
+        "name": "Tarabuco Textiles",
+        "address": "Avenida Germán Mendoza #156, Sucre, Bolivia",
+        "phone": "+591-4-6467890",
+        "website": "https://platanativa.com/categoria-artesania/textiles/",
+        "imageFile": "images/members/textile-logo.webp",
+        "membershipLevel": "Silver",
+        "yearFounded": 1998,
+        "description": "Authentic Bolivian textiles and traditional weaving techniques"
+      },
+      {
+        "name": "Casa de la Libertad Museum",
+        "address": "Plaza 25 de Mayo, Sucre, Bolivia",
+        "phone": "+591-4-6465678",
+        "website": "https://casadelalibertad.org.bo/",
+        "imageFile": "images/members/museum-logo.webp",
+        "membershipLevel": "Platinum",
+        "yearFounded": 1975,
+        "description": "Historical museum showcasing Bolivia's independence"
+      },
+      {
+        "name": "Sucre Chocolates",
+        "address": "Calle Bolívar #432, Sucre, Bolivia",
+        "phone": "+591-4-6462345",
+        "website": "https://www.chocolatesparati.net/",
+        "imageFile": "images/members/chocolate-logo.webp",
+        "membershipLevel": "Bronze",
+        "yearFounded": 2010,
+        "description": "Artisanal chocolates made with Bolivian cacao"
+      },
+      {
+        "name": "Hotel Parador Santa María",
+        "address": "Calle Audiencia #92, Sucre, Bolivia",
+        "phone": "+591-4-6463456",
+        "website": "https://www.parador.com.bo/",
+        "imageFile": "images/members/hotel-logo.webp",
+        "membershipLevel": "Gold",
+        "yearFounded": 1995,
+        "description": "Luxury colonial-style hotel in the heart of Sucre"
+      },
+      {
+        "name": "Café Mirador",
+        "address": "Calle Dalence #300, Sucre, Bolivia",
+        "phone": "+591-4-6464567",
+        "website": "https://www.instagram.com/latorrecafemirador/?hl=es",
+        "imageFile": "images/members/cafe-logo.webp",
+        "membershipLevel": "Silver",
+        "yearFounded": 2012,
+        "description": "Panoramic café with Bolivian coffee and traditional pastries"
+      },
+      {
+        "name": "Bicentennial Foundation",
+        "address": "Avenida Las Américas #78, Sucre, Bolivia",
+        "phone": "+591-4-6468901",
+        "website": "https://bicentenario.bo/",
+        "imageFile": "images/members/foundation-logo.webp",
+        "membershipLevel": "Platinum",
+        "yearFounded": 2018,
+        "description": "Organizing Sucre's 2025 bicentennial independence celebrations"
+      }
+    ]
+  }

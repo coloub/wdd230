@@ -213,3 +213,156 @@
         grid-template-columns: 1fr;
     }
 }
+
+
+/* Directory Page Styles */
+.directory-main {
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.directory-main h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.menu {
+    margin: 1rem auto;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0.5rem;
+    background-color: #f0f0f0;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.menu button {
+    padding: 0.75rem 1.5rem;
+    font-weight: 700;
+    cursor: pointer;
+    margin: 0 0.5rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #0047AB;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.menu button:hover {
+    background-color: #003380;
+}
+
+article.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+}
+
+article.list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+article section {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.grid section {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.grid img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin: 0 auto 1rem;
+    border: 1px solid #eee;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.grid section > * {
+    margin-bottom: 0.5rem;
+}
+
+.grid h3 {
+    font-family: "Caveat", cursive;
+    font-size: 1.5rem;
+    color: #0047AB;
+}
+
+.list section {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.list section > * {
+    margin: 0;
+}
+
+.list section img {
+    display: none;
+}
+
+.list section h3 {
+    font-size: 1.2rem;
+    color: #0047AB;
+}
+
+.list section:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.details-button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #0047AB;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 0.5rem;
+    font-weight: bold;
+}
+
+.details-button:hover {
+    background-color: #003380;
+}
+
+/* Media queries for responsiveness */
+@media screen and (min-width: 640px) {
+    article.grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .list section {
+        grid-template-columns: 2fr 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    article.grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .list section {
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+    }
+    
+    .list section img {
+        display: block;
+        width: 75px;
+        height: 75px;
+        object-fit: contain;
+    }
+}
