@@ -118,3 +118,67 @@
         font-size: 1.2rem;
     }
 }
+
+/* Existing weather styles */
+.weather {
+    text-align: center;
+    padding: 1rem;
+}
+
+/* New forecast styles */
+.weather-forecast {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #ccc;
+}
+
+.weather-forecast h4 {
+    margin-bottom: 0.5rem;
+}
+
+.forecast-day {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+}
+
+.forecast-day .day {
+    width: 50px;
+}
+
+.forecast-day .temp {
+    width: 50px;
+}
+
+/* Meet & Greet Banner */
+.meet-greet-banner {
+    background-color: #2b5797;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.meet-greet-banner p {
+    margin: 0;
+}
+
+.close-banner {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1.2rem;
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.close-banner:hover {
+    opacity: 0.8;
+}
