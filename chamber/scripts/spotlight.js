@@ -1,58 +1,36 @@
-// Function to fetch members data
-async function getMembers() {
-    try {
-        const response = await fetch('data/members.json'); // Adjust path as needed
-        if (response.ok) {
-            const data = await response.json();
-            return data.members;
-        }
-        throw new Error('Failed to fetch members data');
-    } catch (error) {
-        console.error('Error loading members:', error);
-        return [];
-    }
-}
+document.addEventListener("DOMContentLoaded", () => {
+    const spotlightSection = document.getElementById("spotlights");
 
-// Function to get random silver/gold members
-function getRandomSpotlightMembers(members, count) {
-    // Filter for silver and gold members
-    const eligibleMembers = members.filter(member => 
-        member.membershipLevel === 'silver' || member.membershipLevel === 'gold'
-    );
-    
-    // Shuffle array
-    const shuffled = [...eligibleMembers].sort(() => 0.5 - Math.random());
-    
-    // Return requested number of members
-    return shuffled.slice(0, count);
-}
+    // Fetch the JSON data
+    fetch("chamber/data/members.json")
+        .then(response => response.json())
+        .then(data => {
+            const members = data.members;
 
-// Function to create spotlight HTML
-function createSpotlightHtml(member) {
-    return `
-        <div class="spotlight card">
-            <h3>${member.name}</h3>
-            <img src="${member.image}" alt="${member.name} Icon">
-            <p>"${member.slogan}"</p>
-            <hr>
-            <p>${member.email}</p>
-            <p>${member.phone}</p>
-        </div>
-    `;
-}
+            // Filter members with Gold or Silver membership levels
+            const qualifiedMembers = members.filter(member => 
+                member.membershipLevel === "Gold" || member.membershipLevel === "Silver"
+            );
 
-// Function to display spotlight members
-async function displaySpotlights() {
-    const spotlightsContainer = document.querySelector('.spotlights');
-    if (!spotlightsContainer) return;
+            // Randomly select 2-3 members
+            const selectedMembers = [];
+            while (selectedMembers.length < 3 && qualifiedMembers.length > 0) {
+                const randomIndex = Math.floor(Math.random() * qualifiedMembers.length);
+                selectedMembers.push(qualifiedMembers.splice(randomIndex, 1)[0]);
+            }
 
-    const members = await getMembers();
-    const spotlightMembers = getRandomSpotlightMembers(members, 3);
-    
-    spotlightsContainer.innerHTML = spotlightMembers
-        .map(member => createSpotlightHtml(member))
-        .join('');
-}
-
-// Initialize spotlights
-displaySpotlights();
+            // Generate HTML for the selected members
+            selectedMembers.forEach(member => {
+                const memberCard = document.createElement("div");
+                memberCard.classList.add("spotlight-card");
+                memberCard.innerHTML = `
+                    <img src="${member.imageFile}" alt="${member.name} Logo" class="spotlight-image">
+                    <h3>${member.name}</h3>
+                    <p>${member.description}</p>
+                    <a href="${member.website}" target="_blank">Visit Website</a>
+                `;
+                spotlightSection.appendChild(memberCard);
+            });
+        })
+        .catch(error => console.error("Error loading members:", error));
+});
