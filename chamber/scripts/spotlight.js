@@ -4,6 +4,21 @@ document.addEventListener('DOMContentLoaded', async function() {
         const response = await fetch('data/members.json');
         const data = await response.json();
         
+        // Define membership benefits
+        const membershipBenefits = {
+            "Gold": [
+                "Featured placement in directory",
+                "Business training events",
+                "Marketing support",
+                "Networking events access"
+            ],
+            "Silver": [
+                "Business directory listing",
+                "Event discounts",
+                "Monthly workshops"
+            ]
+        };
+
         // Filter for gold and silver members
         const qualifiedMembers = data.members.filter(member => 
             member.membershipLevel === "Gold" || member.membershipLevel === "Silver"
@@ -27,13 +42,29 @@ document.addEventListener('DOMContentLoaded', async function() {
             const spotlightCard = document.createElement('div');
             spotlightCard.className = 'spotlight card';
             
+            // Create benefits list HTML
+            const benefitsList = membershipBenefits[member.membershipLevel]
+                .map(benefit => `<li>${benefit}</li>`)
+                .join('');
+            
             spotlightCard.innerHTML = `
+                <div class="membership-badge ${member.membershipLevel.toLowerCase()}-member">
+                    ${member.membershipLevel} Member
+                </div>
                 <h3>${member.name}</h3>
                 <img src="${member.imageFile}" alt="${member.name} Icon">
-                <p>"${member.description}"</p>
+                <p class="member-description">"${member.description}"</p>
                 <hr>
-                <p>${member.phone}</p>
-                <a href="${member.website}" target="_blank" class="website-link">Visit Website</a>
+                <div class="benefits-section">
+                    <h4>Membership Benefits:</h4>
+                    <ul class="benefits-list">
+                        ${benefitsList}
+                    </ul>
+                </div>
+                <div class="contact-section">
+                    <p>${member.phone}</p>
+                    <a href="${member.website}" target="_blank" class="website-link">Visit Website</a>
+                </div>
             `;
             
             spotlightsSection.appendChild(spotlightCard);
