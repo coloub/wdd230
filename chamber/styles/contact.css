@@ -1,0 +1,150 @@
+/* Contact Page Styles for Sucre Chamber of Commerce */
+
+.contact-main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.contact-main h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--secondary-color);
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.contact-info {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.map-container {
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+}
+
+.office-hours h4 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.8rem;
+    color: var(--primary-color);
+}
+
+.office-hours ul {
+    padding-left: 1.2rem;
+}
+
+.office-hours li {
+    margin-bottom: 0.5rem;
+}
+
+.contact-form {
+    padding: 2rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-family: var(--body-font);
+    font-size: 1rem;
+}
+
+.submit-button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 1rem 1.5rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: var(--transition);
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.submit-button:hover {
+    background-color: var(--secondary-color);
+}
+
+.board-members {
+    padding: 2rem;
+}
+
+.board-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.board-member {
+    padding: 1rem;
+    background-color: var(--light-bg);
+    border-radius: 4px;
+    border: 1px solid var(--border-color);
+}
+
+.board-member h4 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.board-member p {
+    margin: 0.3rem 0;
+}
+
+/* Responsive styles for larger screens */
+@media screen and (min-width: 640px) {
+    .contact-info {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .board-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .contact-container {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .contact-info {
+        grid-template-columns: 1fr;
+        grid-row: span 2;
+    }
+    
+    .map-container iframe {
+        height: 400px;
+    }
+    
+    .board-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

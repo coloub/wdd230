@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact the Sucre Chamber of Commerce - Get in touch with us for information about membership, events, and business opportunities in Sucre, Bolivia">
+    <meta name="author" content="José Manuel Mendoza Torrico">
+
+    <!-- Social Media Meta Tags -->
+    <meta property="og:title" content="Contact Sucre Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://magritouroperator.com/wp-content/uploads/2023/09/bolivia-magri-7.jpg">
+    <meta property="og:url" content="https://coloub.github.io/wdd230">
+    
+    <title>Sucre Chamber of Commerce | Contact</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/contact.css">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo-container">
+                <img src="images/sucre-chamber-logo.webp" alt="Sucre Chamber of Commerce Logo" class="logo">
+                <h1>Sucre Chamber of Commerce</h1>
+            </div>
+            <nav>
+                <button id="menu-button" aria-label="Toggle Menu">
+                    <span>&#9776;</span>
+                </button>
+                <ul id="primary-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="social-links">
+                <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                    <img src="images/facebook-icon.webp" alt="Facebook Icon">
+                </a>
+                <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                    <img src="images/instagram-icon.webp" alt="Instagram Icon">
+                </a>
+            </div>
+        </div>
+        <div class="date-banner">
+            <p id="current-date">Current Date Will Display Here</p>
+        </div>
+    </header>
+
+    <main class="contact-main">
+        <h2>Contact Us</h2>
+        
+        <div class="contact-container">
+            <section class="contact-info">
+                <div class="card">
+                    <h3>Sucre Chamber of Commerce</h3>
+                    <p><strong>Address:</strong><br>Calle Nicolás Ortiz #12<br>Sucre, Bolivia</p>
+                    <p><strong>Phone:</strong><br>+591-4-6460000</p>
+                    <p><strong>Email:</strong><br>info@sucrechamber.org</p>
+                    <div class="office-hours">
+                        <h4>Office Hours</h4>
+                        <ul>
+                            <li><strong>Monday - Friday:</strong> 9:00 AM - 5:00 PM</li>
+                            <li><strong>Saturday:</strong> 10:00 AM - 2:00 PM</li>
+                            <li><strong>Sunday:</strong> Closed</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="map-container card">
+                    <h3>Location</h3>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.3349879544157!2d-65.26209482400539!3d-19.04900371148212!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93fbcf364fa08a6f%3A0xa5ee0501e42e5a03!2sNicolas%20Ortiz%2012%2C%20Sucre!5e0!3m2!1ses-419!2sbo!4v1744641217290!5m2!1ses-419!2sbo" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </section>
+            
+            <section class="contact-form-section">
+                <div class="contact-form card">
+                    <h3>Send Us a Message</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="fullName">Full Name*</label>
+                            <input type="text" id="fullName" name="fullName" required placeholder="Your full name">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email*</label>
+                            <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Optional phone number">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject*</label>
+                            <select id="subject" name="subject" required>
+                                <option value="" disabled selected>Select a subject</option>
+                                <option value="membership">Membership Inquiry</option>
+                                <option value="event">Event Information</option>
+                                <option value="bicentennial">Bicentennial Celebration</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message*</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Write your message here..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-button">Send Message</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+        
+        <section class="board-members card">
+            <h3>Board Members</h3>
+            <div class="board-grid">
+                <div class="board-member">
+                    <h4>José Carlos Mendoza</h4>
+                    <p>President</p>
+                    <p>president@sucrechamber.org</p>
+                </div>
+                
+                <div class="board-member">
+                    <h4>María Elena Flores</h4>
+                    <p>Vice President</p>
+                    <p>vicepresident@sucrechamber.org</p>
+                </div>
+                
+                <div class="board-member">
+                    <h4>Roberto Gutiérrez</h4>
+                    <p>Secretary</p>
+                    <p>secretary@sucrechamber.org</p>
+                </div>
+                
+                <div class="board-member">
+                    <h4>Carmen Rojas</h4>
+                    <p>Treasurer</p>
+                    <p>treasurer@sucrechamber.org</p>
+                </div>
+                
+                <div class="board-member">
+                    <h4>Pedro Bascuñán</h4>
+                    <p>Tourism Director</p>
+                    <p>tourism@sucrechamber.org</p>
+                </div>
+                
+                <div class="board-member">
+                    <h4>Ana Palacios</h4>
+                    <p>Events Coordinator</p>
+                    <p>events@sucrechamber.org</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-top">
+            <div class="footer-logo">
+                <img src="images/sucre-chamber-logo.webp" alt="Sucre Chamber of Commerce Logo" class="logo">
+                <div class="footer-name">
+                    <h3>Sucre Chamber of Commerce</h3>
+                    <p>Calle Nicolás Ortiz #12, Sucre, Bolivia</p>
+                </div>
+            </div>
+            <div class="footer-contact">
+                <p>info@sucrechamber.org</p>
+                <p>+591-4-6460000</p>
+                <p><a href="https://maps.app.goo.gl/x8r2izdDhREQis7J7" target="_blank">📍 Location Map</a></p>
+            </div>
+        </div>
+        <hr>
+        <div class="footer-bottom">
+            <p>&copy; <span id="current-year"></span> Sucre Chamber of Commerce | <span class="dev-name">Jose Manuel Mendoza Torrico</span> | WDD 230 Project</p>
+            <p>Last Modified: <span id="last-modified"></span></p>
+        </div>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+    <script src="scripts/contact.js"></script>
+</body>
+</html>
